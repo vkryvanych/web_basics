@@ -1,0 +1,147 @@
+@import url('https://fonts.google.com/share?selection.family=Cormorant:ital,wght@0,300..700;1,300..700');
+
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #6A0DAD;
+    color: #000000;
+}
+header {
+    background-color: #b344e3;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin: 0;
+    border: #E6E6FA;
+}
+
+
+.container {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius:8px;
+    box-shadow: 0px 0px 10px #E6E6FA;
+    /* margin-bottom: 0;
+    padding-bottom: 0; */
+}
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.recommendation-button {
+    display: block;
+    width: 200px;
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(231, 88, 231);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+        font-size: 18px;
+    border-radius: 8px;
+}
+.recommendation-button:hover {
+    background-color:  #efc5c5;
+}
+
+.picture {
+    display: block;
+    margin: auto;
+}
+
+
+.picture::before {
+    content: "";
+    background-image: url('images/ceed5a33-79ca-4f2f-a023-2c2adc68f1c4-purple-haired-anime-maiden-charming-purple-anime-pfp-1.png');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+
+        .text {
+        position: relative;
+        font-family:'Cormorant';
+        color: #fff;
+        padding: 20px;
+        font-size: 20px;
+        font-size: 1rem; 
+        line-height: 1.6;
+    } 
+
+    .content {
+        margin-top: 150px;
+        margin-bottom: 50px;
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        border-radius:8px;
+        box-shadow: 0px 0px 10px #E6E6FA;
+    }
+
+    .content::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: rgba(0, 0, 0, 0.1); /* Напівпрозорий фон для розмиття */
+    border-radius: 15px;
+    filter: blur(10px); /* Ефект розмиття */
+    z-index: 0; /* Розташування позаду основного контейнера */
+    pointer-events: none; /* Дозволяє кліки по елементах під псевдоелементом */
+}
+
+/* Адаптивні стилі для планшетів */
+@media (max-width: 768px) {
+    header {
+        font-size: 1.3rem;
+    }
+    .container, .content {
+        margin: 30px auto;
+        padding: 15px;
+        max-width: 90%;
+    }
+    .intro h2 {
+        font-size: 1.5rem;
+    }
+    .intro p, .text p {
+        font-size: 0.9rem;
+    }
+    .recommendation-button {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+/* Адаптивні стилі для мобільних пристроїв */
+@media (max-width: 480px) {
+    header {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+    .container, .content {
+        margin: 20px auto;
+        padding: 10px;
+        max-width: 95%;
+    }
+    .intro h2 {
+        font-size: 1.3rem;
+    }
+    .intro p, .text p {
+        font-size: 0.8rem;
+    }
+    .recommendation-button {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}
